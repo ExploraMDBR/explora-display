@@ -1,0 +1,93 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	overflow: hidden;
+	font-family: monospace;
+}
+
+h1#main_title{
+	position:absolute
+}
+
+video, img {
+	width: 100%
+}
+
+.hidden {
+	display: none
+}
+
+#over{
+	position: absolute;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+#over p{
+	width: 100%;
+	height: 70%;
+	text-align: left;
+	margin-left: 200px;
+	font-size: 80px;
+	color: #051d49;
+	transform: rotate(180deg);
+	writing-mode: vertical-rl;
+	text-orientation: mixed;
+	padding-right: 14%;
+}
+
+#over p.final{
+	color: #75a4ff;
+	font-size: 190px;
+	margin-top: 317px;
+	margin-left: -26px;
+}
+
+#transition {
+	width: 100%;
+	height: 100%;
+	z-index: 3;
+	background-color: white;
+	position: absolute;
+}
+
+#screen_CONF{
+	width: 100%;
+	height:100%;
+	background-color: red; 
+}
+
+/*		video{
+  -moz-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+  -o-transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  transform:rotate(180deg);
+}*/
+
+#arrow{
+	position: fixed;
+	top: 10px;
+	left:50px;
+	width: initial
+}
