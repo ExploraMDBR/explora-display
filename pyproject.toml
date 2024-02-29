@@ -8,8 +8,7 @@ packages = [{include = "explora", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-pydantic-core = "2.16.2"
-fastapi = {extras = ["all"], version = "^0.110.0"}
+fastapi = {extras = ["all"]}
 
 [build-system]
 requires = ["poetry-core"]
