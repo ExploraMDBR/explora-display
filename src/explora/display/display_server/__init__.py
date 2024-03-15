@@ -7,8 +7,8 @@ from ._utils import (get_ip, get_comm_json, dump_to_console,
 PORT = 8080
 HOST = "0.0.0.0"
 
-@app.websocket("/{path}")
-async def _websocket_endpoint(websocket: WebSocket, path):
+@app.websocket("/")
+async def _websocket_endpoint(websocket: WebSocket):
 	await ws_manager.connect(websocket)
 	client_id = websocket.scope["client"]
 	try:
@@ -41,7 +41,7 @@ app.router.lifespan_context = _lifespan
 def main(_host = HOST, _port=PORT, _static_dir=("/", STATIC_DIR), loop=None):
 	import uvicorn
 	add_static_dir(*_static_dir)
-	module_str = __name__ if __name__ != "__main__" else "explora_hat.display_server"
+	module_str = __name__ if __name__ != "__main__" else "explora.display.display_server"
 	if not loop:
 		uvicorn.run(app="{}:app".format(module_str), port=_port, 
 			host=_host)
