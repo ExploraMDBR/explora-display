@@ -8,6 +8,9 @@
 
 Python module for creating simple interactive kiosk displays for phygital installations. 
 
+> [!CAUTION]
+> This module is still under heavy development and is not stable or meant for production 
+
 ## Installation
 
 ```bash
