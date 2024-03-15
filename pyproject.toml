@@ -17,10 +17,10 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [[tool.poetry.source]]
-name = "piwheels"
-url = "https://www.piwheels.org/simple"
+name = "PyPI"
 priority = "primary"
 
 [[tool.poetry.source]]
-name = "PyPI"
+name = "piwheels"
+url = "https://www.piwheels.org/simple"
 priority = "supplemental"
