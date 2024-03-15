@@ -9,7 +9,7 @@ Python module for creating simple interactive kiosk displays for phygital instal
 ## Installation
 
 ```bash
-pip install -i https://test.pypi.org/simple/ explora-display
+pip install -i https://test.pypi.org/simple/ explora-display --extra-index-url https://pypi.org/simple
 ```
 
 ```python
